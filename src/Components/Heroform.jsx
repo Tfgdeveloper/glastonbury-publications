@@ -72,7 +72,7 @@ const handleSubmit = async (e) => {
 };
   const titleStyle = {
     fontFamily: "Cormorant Garamond, sans-serif",
-    fontSize: "42px",
+    
     fontStyle: "normal",
     fontWeight: 700,
     color: "black",
@@ -80,12 +80,12 @@ const handleSubmit = async (e) => {
   };
 
   return (
-    <section className="bg-[#EAE9E9] w-full flex justify-center items-center  ">
-  <div className="py-10 px-6 md:px-16 bg-[#EAE9E980] w-[90%] flex flex-col justify-center items-center mt-[-85px] rounded-2xl z-0 shadow-lg box-shadow: 0 4.16px 43.683px 0 rgba(0, 0, 0, 0.25);">
-        <h2 className="mb-4 leading-none text-center " style={titleStyle}>
+    <section className="w-full flex justify-center items-center ">
+  <div className="py-10 px-2 md:px-16 bg-[#EAE9E980] md:w-[90%]  w-[100%] flex flex-col justify-center items-center rounded-2xl z-0 shadow-lg box-shadow: 0 4.16px 43.683px 0 rgba(0, 0, 0, 0.25);">
+        <h2 className="mb-4 leading-none text-center text-[28px] md:text-[48px]" style={titleStyle}>
               Start Your Publishing Journey   
                 </h2>
-    <form onSubmit={handleSubmit} className="flex flex-col md:flex-row items-center space-x-4 space-y-4 ">
+    <form onSubmit={handleSubmit} className="w-full flex flex-col md:flex-row items-center space-x-4 space-y-4 px-4">
      
       <input
         type="text"

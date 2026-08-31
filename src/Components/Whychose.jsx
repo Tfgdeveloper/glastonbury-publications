@@ -141,7 +141,7 @@ export default function WhyChooseUsSection({
             <img
               src={leftGif}
               alt="Animation"
-              className='w-full md:mt-[-250px] md:ml-[100px] mt-[-150px] ml-[40px]'
+              className='w-[70%] md:w-full md:mt-[-250px] md:ml-[100px] mt-[-150px] ml-[40px]'
             />
           )}
         </motion.div>

@@ -14,7 +14,7 @@ function Ctasection() {
       viewport={{ once: true, amount: 0.3 }} // triggers when 30% of the section is in view
       transition={{ duration: 0.8, ease: "easeOut" }}
     >
-      <img src="/images/EXCLUSIVE-oFFER.jpg" className="w-full h-50 md:h-auto"/>
+      <img src="/images/Group 1707481923.png" className="w-full "/>
     </motion.div>
   );
 }

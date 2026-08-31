@@ -101,10 +101,10 @@ export default function Aboutsection({
       whileInView="visible"
       viewport={{ once: true, amount: 0.3 }}
     >
-      <div className="max-w-full w-full flex flex-col items-center relative">
+      <div className="max-w-full w-full flex flex-col  items-center relative">
         {/* Right: Content */}
         <motion.div
-          className="w-full px-4 lg:pl-16 mt-10 lg:mt-0 flex flex-row"
+          className="w-full px-4 lg:pl-16 mt-10 lg:mt-0 flex flex-col justify-center items-center md:flex-row"
           variants={fadeSlideUp}
         >
           <div className='md:w-1/2'>

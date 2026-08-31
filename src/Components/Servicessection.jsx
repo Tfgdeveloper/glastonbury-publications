@@ -161,7 +161,7 @@ export default function Servicessection() {
   ];
 
   return (
-    <section className="w-full bg-[#EAE9E9] py-32 px-4 flex justify-center">
+    <section className="w-full bg-[#EAE9E9] py-10 md:py-32  px-4 flex justify-center">
       <div className="max-w-7xl w-full flex flex-col lg:flex-row items-center relative">
         <div className="flex-1 lg:px-16 mt-10 lg:mt-0">
           <h2

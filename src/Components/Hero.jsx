@@ -8,6 +8,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import Lottie from "lottie-react";
 import animationData from "/src/assets/Confetti Burst.json";
 import phoneAnimation from "/src/assets/button (2).json";
+import Heroform from "./Heroform";
 
 // ─── Constants ────────────────────────────────────────────────────────────
 const PHONE_NUMBER = "+14159186468";
@@ -270,10 +271,10 @@ export default function HeroSection({
 
       <section
         id="hero-section"
-        className="w-full h-auto lg:max-h-[100vh] md:max-h-[85vh] overflow-hidden flex flex-col md:flex-row items-center justify-between bg-[linear-gradient(145deg,#3b6635,#2d6588)] relative"
+        className="w-full lg:max-h-[100vh] md:max-h-[85vh] overflow-hidden flex flex-col md:flex-row items-center justify-between bg-[linear-gradient(145deg,#3b6635,#2d6588)] relative"
       >
         {/* Left Content */}
-        <motion.div className="max-w-screen-2xl flex-1 box-border pl-4 md:pl-16 pr-10 pt-10 pb-8 md:pt-24 md:mb-40 min-w-0 text-white relative z-30 flex flex-col justify-center min-h-fit">
+        <motion.div className="max-w-screen-2xl flex-1 box-border pl-4 md:pl-16 pr-10 pt-30 pb-8 md:pt-50 md:mb-40 min-w-0 text-white relative z-30 flex flex-col justify-center text-center md:text-left min-h-fit">
           <h1 className="mb-1" style={{ ...styles.welcomeText, fontSize: "16px" }}>
             {welcomeText}
           </h1>
@@ -338,8 +339,9 @@ export default function HeroSection({
         </motion.div>
 
         {/* Right Section */}
-        <div className="flex-1 min-w-0">
+        <div className="flex-1 min-w-0 pb-20">
           <Animations />
+          <Heroform/>
         </div>
 
         <Popup isOpen={isPopupOpen} closePopup={closePopup} />

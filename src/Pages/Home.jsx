@@ -47,7 +47,10 @@ const Home = () => {
       listItems={[
   ]}
       />
-      <Heroform/>
+      <section className='hidden md:flex md:mt-[-85px] bg-[#EAE9E9] w-full flex justify-center items-center z-[9999]'>
+        <Heroform/>
+              
+      </section>
       
       <Servicessection/>
       <Ctasection/>
