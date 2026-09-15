@@ -265,7 +265,7 @@ function AuthorModal({ author, onClose }) {
       onClick={onClose}
     >
       <motion.div
-        className="relative max-h-[88vh] w-full max-w-3xl overflow-y-auto rounded-2xl bg-[#fff]"
+        className="modal-scroll relative max-h-[88vh] w-full max-w-3xl overflow-y-auto rounded-2xl bg-[#fff]"
         initial={{ opacity: 0, scale: 0.95, y: 12 }}
         animate={{ opacity: 1, scale: 1, y: 0 }}
         exit={{ opacity: 0, scale: 0.96, y: 8 }}
@@ -298,7 +298,7 @@ function AuthorModal({ author, onClose }) {
           <div
             className="relative p-8"
             style={{
-              backgroundImage: "url('/images/Book-Cover-Front/BG.jpg')", 
+              backgroundImage: "url('/images/Book-Cover-Front/BG.jpg')",
               backgroundSize: "cover",
               backgroundPosition: "center",
             }}
@@ -315,7 +315,7 @@ function AuthorModal({ author, onClose }) {
                     <img
                       src={t.cover}
                       alt={t.title}
-                      className="aspect-[3/4.2] w-full rounded-md object-cover ring-1 ring-[#e4d9c8]"
+                      className="w-full h-auto rounded-md border-0 outline-none object-contain shadow-[0_8px_20px_-6px_rgba(30,42,56,0.35)]"
                     />
                     <p className="mt-1.5 text-xs font-medium text-[#1e2a38] line-clamp-2">{t.title}</p>
                     <p className="text-xs text-[#8b8178]">{t.year}</p>
