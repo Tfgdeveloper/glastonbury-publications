@@ -30,10 +30,10 @@ const AUTHORS = [
       otherRights: "Enquire",
     },
     titles: [
-      { title: "Protégé", description: "Synopsis available on enquiry.", cover: "https://picsum.photos/seed/newman1/300/420" },
-      { title: "Pilot", description: "Synopsis available on enquiry.", cover: "https://picsum.photos/seed/newman2/300/420" },
-      { title: "Convict Son", description: "Synopsis available on enquiry.", cover: "https://picsum.photos/seed/newman3/300/420" },
-      { title: "Living with Deuteronomy", description: "Synopsis available on enquiry.", cover: "https://picsum.photos/seed/newman4/300/420" },
+      { title: "Protégé", description: "Synopsis available on enquiry.", cover: "/images/Book-Cover-Front/Protege.png" },
+      { title: "Pilot", description: "Synopsis available on enquiry.", cover: "/images/Book-Cover-Front/Pilot.png" },
+      { title: "Convict Son", description: "Synopsis available on enquiry.", cover: "/images/Book-Cover-Front/Convict-Son.png" },
+      { title: "Living with Deuteronomy", description: "Synopsis available on enquiry.", cover: "/images/Book-Cover-Front/LivingWD.png" },
     ],
   },
   {
@@ -54,11 +54,11 @@ const AUTHORS = [
       audioRights: "Enquire",
     },
     titles: [
-      { title: "Genesis", description: "Holly begins her new existence as a rare Daywalker and takes on her first assignment in District 7, where criminals, dangerous vampires, and uneasy alliances test her abilities.", cover: "https://picsum.photos/seed/paladini1/300/420" },
-      { title: "Confessions of a Sinner", description: "As violence weighs on her conscience, Holly questions faith, morality, forgiveness, and whether following the Order's commands can justify the lives she has taken.", cover: "https://picsum.photos/seed/paladini2/300/420" },
-      { title: "One Way Ticket to Hell", description: "When a ruthless vampire gang targets Holly, the danger becomes personal, drawing her into a deadly struggle of duty, vengeance, and survival.", cover: "https://picsum.photos/seed/paladini3/300/420" },
-      { title: "Willy Jones: Paranormal Reporter", description: "Veteran reporter Willy Jones investigates Metro City's strangest cases, uncovering ghosts, monsters, vampires, and supernatural threats.", cover: "https://picsum.photos/seed/paladini4/300/420" },
-      { title: "The Inquisitor", description: "Willy returns to face darker mysteries involving soul-collecting killers, restless spirits, ancient legends, and cases that pull him deeper into the supernatural.", cover: "https://picsum.photos/seed/paladini5/300/420" },
+      { title: "Genesis", description: "Holly begins her new existence as a rare Daywalker and takes on her first assignment in District 7, where criminals, dangerous vampires, and uneasy alliances test her abilities.", cover: "/images/Book-Cover-Front/DW-Vampire.png" },
+      { title: "Confessions of a Sinner", description: "As violence weighs on her conscience, Holly questions faith, morality, forgiveness, and whether following the Order's commands can justify the lives she has taken.", cover: "/images/Book-Cover-Front/Vampire-Princess.png" },
+      { title: "One Way Ticket to Hell", description: "When a ruthless vampire gang targets Holly, the danger becomes personal, drawing her into a deadly struggle of duty, vengeance, and survival.", cover: "/images/Book-Cover-Front/OneWay-Ticket.png" },
+      { title: "Willy Jones: Paranormal Reporter", description: "Veteran reporter Willy Jones investigates Metro City's strangest cases, uncovering ghosts, monsters, vampires, and supernatural threats.", cover: "/images/Book-Cover-Front/Willy-Jones.png" },
+      { title: "The Inquisitor", description: "Willy returns to face darker mysteries involving soul-collecting killers, restless spirits, ancient legends, and cases that pull him deeper into the supernatural.", cover: "/images/Book-Cover-Front/The-Inquisitor.png" },
     ],
   },
   {
@@ -79,7 +79,7 @@ const AUTHORS = [
       audioAdaptationRights: "Enquire",
     },
     titles: [
-      { title: "Millard: Warrior of the King — Book One: Who Am I?", description: "An adventure of identity, faith, and purpose, following Millard as he confronts hidden truths about who he is and what he was created to become.", cover: "https://picsum.photos/seed/johnson1/300/420" },
+      { title: "Millard: Warrior of the King — Book One: Who Am I?", description: "An adventure of identity, faith, and purpose, following Millard as he confronts hidden truths about who he is and what he was created to become.", cover: "/images/Book-Cover-Front/Stephanie.png" },
     ],
   },
   {
@@ -87,7 +87,7 @@ const AUTHORS = [
     name: "Fred Van Horn",
     genres: ["Nonfiction", "Leadership"],
     books: 3,
-    photo: "/images/author/",
+    photo: "/images/author/Fred-Van-Horn.png",
     bio: "Across three titles, Fred Van Horn explores character, judgment, courage, and legacy — from personal reflection to accounts of everyday courage.",
     longBio:
       "Fred Van Horn's Considering Man collection explores character, judgment, courage, and legacy across three interconnected works — moving from a study of the habits behind strong character, to personal reflection, to real accounts of moral courage.",
@@ -99,9 +99,9 @@ const AUTHORS = [
       audioRights: "Enquire",
     },
     titles: [
-      { title: "The Considering Man", description: "An exploration of listening, judgment, humility, courage, responsibility, and the habits through which strong character develops.", cover: "https://picsum.photos/seed/vanhorn1/300/420" },
-      { title: "Reflections of a Considering Man", description: "Personal reflections on character, duty, leadership, gratitude, and the experiences that shape a thoughtful life.", cover: "https://picsum.photos/seed/vanhorn2/300/420" },
-      { title: "Do Not Look Away", description: "Stories of individuals whose courage and conscience compelled them to act when remaining silent would have been easier.", cover: "https://picsum.photos/seed/vanhorn3/300/420" },
+      { title: "The Considering Man", description: "An exploration of listening, judgment, humility, courage, responsibility, and the habits through which strong character develops.", cover: "/images/Book-Cover-Front/The-Considering-Man.png" },
+      { title: "Reflections of a Considering Man", description: "Personal reflections on character, duty, leadership, gratitude, and the experiences that shape a thoughtful life.", cover: "/images/Book-Cover-Front/Reflections.png" },
+      { title: "Do Not Look Away", description: "Stories of individuals whose courage and conscience compelled them to act when remaining silent would have been easier.", cover: "/images/Book-Cover-Front/Do-Not-Lookaway.png" },
     ],
   },
   {
@@ -109,7 +109,7 @@ const AUTHORS = [
     name: "Roger Sherman",
     genres: ["Thriller", "Crime"],
     books: 1,
-    photo: "/images/author/",
+    photo: "/images/author/Roger-Shermon.png",
     bio: "A provocative thriller exploring the dangerous line between protecting democracy and abandoning the principles that define it.",
     longBio:
       "Professor Roger De Sherburne lives between two worlds: Ivy League academia and the Brooklyn underworld. When he becomes entangled in a shadowy struggle involving terrorism, covert operations, criminal networks, and secret organizations, he enters a world where conventional law no longer applies.",
@@ -121,7 +121,7 @@ const AUTHORS = [
       audioAdaptationRights: "Enquire",
     },
     titles: [
-      { title: "The No Rules Protocol", description: "When the rules disappear, who decides what is right? A provocative thriller exploring the dangerous line between protecting democracy and abandoning the principles that define it.", cover: "https://picsum.photos/seed/sherman1/300/420" },
+      { title: "The No Rules Protocol", description: "When the rules disappear, who decides what is right? A provocative thriller exploring the dangerous line between protecting democracy and abandoning the principles that define it.", cover: "/images/Book-Cover-Front/Protocol.png" },
     ],
   },
   {
@@ -142,7 +142,7 @@ const AUTHORS = [
       territorialRights: "Enquire",
     },
     titles: [
-      { title: "A Month At A Time", description: "Twelve months, a year of discovery — introducing children to the calendar year through simple rhyme and colorful illustration.", cover: "https://picsum.photos/seed/nadarajan1/300/420" },
+      { title: "A Month At A Time", description: "Twelve months, a year of discovery — introducing children to the calendar year through simple rhyme and colorful illustration.", cover: "/images/Book-Cover-Front/Sarah.png" },
     ],
   },
   {
@@ -163,32 +163,12 @@ const AUTHORS = [
       audioAdaptationRights: "Enquire",
     },
     titles: [
-      { title: "Muddy River Running", description: "Set around the end of the American Civil War, Laureen Wallace's journey carries her from Three Willows plantation toward the Mississippi and aboard the ill-fated Sultana, placing her personal story against one of America's devastating maritime disasters.", cover: "https://picsum.photos/seed/howard1/300/420" },
-      { title: "Three Willows Dance", description: "Having survived catastrophe, Laureen returns to a transformed South where she must rebuild Three Willows and create a future amid the uncertainties of Reconstruction.", cover: "https://picsum.photos/seed/howard2/300/420" },
+      { title: "Muddy River Running", description: "Set around the end of the American Civil War, Laureen Wallace's journey carries her from Three Willows plantation toward the Mississippi and aboard the ill-fated Sultana, placing her personal story against one of America's devastating maritime disasters.", cover: "/images/Book-Cover-Front/Muddy-River.png" },
+      { title: "Three Willows Dance", description: "Having survived catastrophe, Laureen returns to a transformed South where she must rebuild Three Willows and create a future amid the uncertainties of Reconstruction.", cover: "/images/Book-Cover-Front/Three-Willows.png" },
     ],
   },
   {
     id: 8,
-    name: "John F. Desmond",
-    genres: ["Contemporary Fiction", "Family"],
-    books: 1,
-    photo: "/images/author/",
-    bio: "Every name has a story, every memory matters — a heartfelt story about service, remembrance, family, and first love.",
-    longBio:
-      "Eighteen-year-old Eddie reluctantly spends Memorial Day weekend placing flags on veterans' graves with his strict Aunt Mildred. What begins as four hours of community service becomes a moving discovery involving a young Vietnam soldier, an old friendship, a handmade American flag, and a secret love Aunt Mildred has carried for more than half a century.",
-    rights: {
-      category: "Contemporary Fiction / Family / Veterans",
-      originalLanguage: "English",
-      translationRights: "Enquire",
-      territorialRights: "Enquire",
-      audioAdaptationRights: "Enquire",
-    },
-    titles: [
-      { title: "On Behalf of…", description: "A heartfelt story about service, remembrance, family, first love, and the distance between generations.", cover: "https://picsum.photos/seed/desmond1/300/420" },
-    ],
-  },
-  {
-    id: 9,
     name: "Colleen A. Rickenbacher",
     genres: ["Business", "Etiquette"],
     books: 1,
@@ -204,11 +184,11 @@ const AUTHORS = [
       audioRights: "Enquire",
     },
     titles: [
-      { title: "Be On Your Best Business Behavior", description: "Professionalism never goes out of style — a practical guide to workplace behavior, networking, business dining, and communication.", cover: "https://picsum.photos/seed/rickenbacher1/300/420" },
+      { title: "Be On Your Best Business Behavior", description: "Professionalism never goes out of style — a practical guide to workplace behavior, networking, business dining, and communication.", cover: "/images/Book-Cover-Front/Business.png" },
     ],
   },
   {
-    id: 10,
+    id: 9,
     name: "Ellen Fortgang",
     genres: ["Children's", "Activity Books"],
     books: 3,
@@ -223,9 +203,9 @@ const AUTHORS = [
       territorialRights: "Enquire",
     },
     titles: [
-      { title: "Pencil Fun Mania 1", description: "Part of the Pencil Fun Mania activity series for children — details available on enquiry.", cover: "https://picsum.photos/seed/fortgang1/300/420" },
-      { title: "Pencil Fun Mania 2", description: "Part of the Pencil Fun Mania activity series for children — details available on enquiry.", cover: "https://picsum.photos/seed/fortgang2/300/420" },
-      { title: "Pencil Fun Mania 3", description: "Part of the Pencil Fun Mania activity series for children — details available on enquiry.", cover: "https://picsum.photos/seed/fortgang3/300/420" },
+      { title: "Pencil Fun Mania 1", description: "Part of the Pencil Fun Mania activity series for children — details available on enquiry.", cover: "/images/Book-Cover-Front/Pencil.png" },
+      { title: "Pencil Fun Mania 2", description: "Part of the Pencil Fun Mania activity series for children — details available on enquiry.", cover: "/images/Book-Cover-Front/Little-Ones.png" },
+      { title: "Pencil Fun Mania 3", description: "Part of the Pencil Fun Mania activity series for children — details available on enquiry.", cover: "/images/Book-Cover-Front/Fun-For-Kids.png" },
     ],
   },
 ];
@@ -315,22 +295,33 @@ function AuthorModal({ author, onClose }) {
             </div>
           </div>
 
-          <div className="p-8">
-            <p className="text-[15px] leading-relaxed text-[#5b544c]">{author.longBio}</p>
+          <div
+            className="relative p-8"
+            style={{
+              backgroundImage: "url('/images/Book-Cover-Front/BG.jpg')", 
+              backgroundSize: "cover",
+              backgroundPosition: "center",
+            }}
+          >
+            <div className="absolute inset-0 " />
 
-            <h4 className="mt-7 font-[Fraunces] text-base text-[#1e2a38]">Bibliography</h4>
-            <div className="mt-4 grid grid-cols-2 gap-4 sm:grid-cols-3">
-              {author.titles.map((t) => (
-                <div key={t.title}>
-                  <img
-                    src={t.cover}
-                    alt={t.title}
-                    className="aspect-[3/4.2] w-full rounded-md object-cover ring-1 ring-[#e4d9c8]"
-                  />
-                  <p className="mt-1.5 text-xs font-medium text-[#1e2a38] line-clamp-2">{t.title}</p>
-                  <p className="text-xs text-[#8b8178]">{t.year}</p>
-                </div>
-              ))}
+            <div className="relative">
+              <p className="text-[15px] leading-relaxed text-[#5b544c]">{author.longBio}</p>
+
+              <h4 className="mt-7 font-[Fraunces] text-base text-[#1e2a38]">Bibliography</h4>
+              <div className="mt-4 grid grid-cols-2 gap-4 sm:grid-cols-3">
+                {author.titles.map((t) => (
+                  <div key={t.title}>
+                    <img
+                      src={t.cover}
+                      alt={t.title}
+                      className="aspect-[3/4.2] w-full rounded-md object-cover ring-1 ring-[#e4d9c8]"
+                    />
+                    <p className="mt-1.5 text-xs font-medium text-[#1e2a38] line-clamp-2">{t.title}</p>
+                    <p className="text-xs text-[#8b8178]">{t.year}</p>
+                  </div>
+                ))}
+              </div>
             </div>
           </div>
         </div>
@@ -348,7 +339,7 @@ export default function AuthorsSection() {
 
   return (
     <section className="px-6 py-10">
-        <style>{`
+      <style>{`
         .line-clamp-3 { display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
  
         /* keep the scrollbar inset within the modal's rounded corners, styled white */
@@ -376,7 +367,7 @@ export default function AuthorsSection() {
       `}</style>
 
       <div className="mx-auto max-w-6xl">
-        
+
 
         <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
           <AnimatePresence initial={false}>
