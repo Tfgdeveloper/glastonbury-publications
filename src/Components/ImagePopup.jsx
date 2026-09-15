@@ -25,7 +25,7 @@ const ImagePopup = ({ image, alt = "popup image", onClose }) => {
   if (!open) return null;
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center z-9999999">
+    <div className="fixed inset-0 z-50 flex items-center justify-center z-[999999]">
       {/* Background overlay */}
       <div
         className="absolute inset-0 bg-black/70 backdrop-blur-sm"

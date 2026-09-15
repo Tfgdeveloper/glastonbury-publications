@@ -40,7 +40,7 @@ const Autopopup = () => {
         <AnimatePresence>
       {isOpen && (
         <motion.div
-          className="fixed inset-0 flex justify-center items-end md:items-center z-50"
+          className="fixed inset-0 flex justify-center items-end md:items-center z-[9999]"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}

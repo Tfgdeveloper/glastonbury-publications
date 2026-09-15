@@ -41,6 +41,7 @@ import SocialMediaPublicist from "./Pages/Socialmediapublicist";
 import TimesSquareBookAnnouncement from "./Pages/Timessquarebookannouncement";
 import BecomeAmazonBestseller from "./Pages/Becomeamazonbestseller";
 import BecomeBarnesNobleBestseller from "./Pages/Becomebarnesnoblebestseller";
+import Catalogue2026 from "./Pages/Catalogue2026";
 
 function App() {
   useEffect(() => {
@@ -85,6 +86,7 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/services" element={<Services />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/2026-catalogue" element={<Catalogue2026 />} />
 
         <Route path="/publishing-solutions" element={<Publishingsolutions />} />
         <Route path="/cover-design-and-layout" element={<CoverdesignandLayout />} />

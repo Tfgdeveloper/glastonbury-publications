@@ -267,7 +267,7 @@ export default function Header() {
       initial="hidden"
       animate="visible"
       variants={headerFade}
-      className="relative z-[99999999]"
+      className="relative z-[999]"
     >
       {/* Top strip: contact info */}
       <div

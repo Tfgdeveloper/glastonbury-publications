@@ -30,7 +30,7 @@ const Popup = ({ isOpen, closePopup }) => {
     <AnimatePresence>
       {isOpen && (
         <motion.div
-          className="fixed inset-0 flex justify-center items-end md:items-center z-999"
+          className="fixed inset-0 flex justify-center items-end md:items-center z-50"
           variants={backdropVariants}
           initial="hidden"
           animate="visible"

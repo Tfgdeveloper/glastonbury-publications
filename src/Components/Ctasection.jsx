@@ -14,7 +14,9 @@ function Ctasection() {
       viewport={{ once: true, amount: 0.3 }} // triggers when 30% of the section is in view
       transition={{ duration: 0.8, ease: "easeOut" }}
     >
-      <img src="/images/Group 1707481923.png" className="w-full "/>
+      
+      <img src="/images/50%cta2.png" className="hidden md:flex w-full "/>
+      <img src="/images/50%cta.jpg" className="flex md:hidden w-full "/>
     </motion.div>
   );
 }
