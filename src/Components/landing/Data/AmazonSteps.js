@@ -1,0 +1,7 @@
+export const AmazonSteps = [
+  { key: "one",   label: "STEP ONE",   title: "Manuscript Submission", body: "Submit your manuscript to our editorial team, and we’ll prepare it with flawless formatting, layout consistency, and complete compliance checks to ensure a smooth publishing process across all major platforms." },
+  { key: "two",   label: "STEP TWO",   title: "Cover & Interior Design",      body: "Our designers craft a compelling cover and polished interior layout that meet industry standards and captivate readers — ensuring your book stands out both online and in print." },
+  { key: "three", label: "STEP THREE", title: "Metadata Optimization",    body: "We position your book with the right categories, keywords, and descriptions to boost discoverability and visibility across global marketplaces." },
+  { key: "four",  label: "STEP FOUR",  title: "Publishing & Approval",   body: "We manage the full upload and review process, ensuring your book is approved smoothly and goes live without delays on all selected publishing platforms." },
+  { key: "five",  label: "STEP FIVE",  title: "Marketing Support",       body: "Once published, we provide tailored marketing strategies to help you generate reviews, increase visibility, and achieve consistent book sales across multiple channels." },
+];

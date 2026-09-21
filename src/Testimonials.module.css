@@ -1,0 +1,5 @@
+/* Testimonials.module.css */
+:global(.swiper) { --swiper-theme-color:#2563eb; }
+:global(.swiper-button-prev), :global(.swiper-button-next) { color:#2563eb; }
+:global(.swiper-pagination-bullet) { background:#cbd5e1; opacity:1; }
+:global(.swiper-pagination-bullet-active) { background:#2563eb; width:22px; border-radius:9999px; }

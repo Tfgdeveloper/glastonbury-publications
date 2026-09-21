@@ -1,0 +1,187 @@
+@import url('https://fonts.cdnfonts.com/css/green-fuz');
+@import "tailwindcss";
+
+html,
+body,
+#root {
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: clip;
+}
+
+@keyframes glow {
+
+  0%,
+  100% {
+    text-shadow: 0 0 8px rgba(255, 255, 255, 0.5);
+  }
+
+  50% {
+    text-shadow: 0 0 16px rgba(255, 255, 255, 0.8);
+  }
+}
+
+.animate-glow {
+  animation: glow 2s ease-in-out infinite;
+}
+
+.scalable-div {
+  animation: scaleAnimation 1s infinite alternate;
+}
+
+@keyframes scaleAnimation {
+  0% {
+    transform: scale(0.9);
+  }
+
+  100% {
+    transform: scale(1.1);
+  }
+}
+
+.green-fuz {
+  font-family: 'Green Fuz', sans-serif;
+}
+
+.heading-lp {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.heading-lp2 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.text-lp {
+  font-family: 'Segoe UI', sans-serif;
+  font-weight: 700;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #d6d6d680;
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #2B6781 0%, #31552F 99.09%);
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.chewy {
+  font-family: "Chewy", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.jost {
+  font-family: "Jost", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.floating-img {
+  animation: floatY 3s ease-in-out infinite;
+}
+
+@keyframes floatY {
+
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-15px);
+  }
+}
+
+.swiper-pagination-bullet-active {
+  width: 22px;
+  border-radius: 9999px;
+}
+
+video::-webkit-media-controls-enclosure {
+  overflow: hidden;
+}
+
+video::-webkit-media-controls-panel {
+  width: calc(100% + 30px);
+}
+
+.blink-scale-btn {
+  animation: blinkScaleGlow 1.8s ease-in-out infinite;
+}
+
+@keyframes blinkScaleGlow {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.08);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(100%);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.discount-text {
+  display: inline-block;
+  font-weight: 700;
+  font-size: 18px;
+  animation: blinkScale 1s infinite ease-in-out;
+}
+
+/* Animation */
+@keyframes blinkScale {
+  0% {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  50% {
+    opacity: 0.6;
+    transform: scale(1.2);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.headingfont{
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 700;
+}
+
+.bodyfont{
+    font-family: "Lora", serif;
+  font-weight: 400;
+}

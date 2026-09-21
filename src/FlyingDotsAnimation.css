@@ -1,0 +1,72 @@
+/* FlyingDotsAnimation.css */
+.animation-container {
+  position: relative;
+  width: 600px; /* Adjust as needed */
+  height: 400px; /* Adjust as needed */
+  border: 2px solid #61dafb;
+  border-radius: 10px;
+  overflow: hidden; /* Keep dots within the container */
+  background-color: #282c34;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.central-div {
+  background-color: #ffffff;
+  padding: 20px 40px;
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(97, 218, 251, 0.7);
+  text-align: center;
+  color: #282c34;
+  z-index: 10; /* Ensure the central div is above dots */
+}
+
+.flying-dot {
+  position: absolute;
+  border-radius: 50%;
+  opacity: 0.8;
+  animation: flyAround linear infinite;
+  z-index: 1; /* Dots below the central div */
+}
+
+@keyframes flyAround {
+  0% {
+    transform: translate(0, 0) scale(1);
+    opacity: 0.8;
+  }
+  25% {
+    transform: translate(calc(var(--rand-x) * 0.25), calc(var(--rand-y) * 0.25)) scale(1.1);
+    opacity: 0.9;
+  }
+  50% {
+    transform: translate(calc(var(--rand-x) * 0.5), calc(var(--rand-y) * 0.5)) scale(1);
+    opacity: 0.8;
+  }
+  75% {
+    transform: translate(calc(var(--rand-x) * 0.75), calc(var(--rand-y) * 0.75)) scale(0.9);
+    opacity: 0.7;
+  }
+  100% {
+    transform: translate(var(--rand-x), var(--rand-y)) scale(1);
+    opacity: 0.8;
+  }
+}
+
+/* To make the dots actually move in varied paths, we need to inject custom properties.
+   Since we're setting `left` and `top` randomly in JS, we can use these as starting points,
+   and for `flyAround`, we'd ideally want to vary the `transform` further.
+   However, directly setting `var(--rand-x)` and `var(--rand-y)` in CSS based on JS
+   for *each* dot's unique path is tricky with a single @keyframes.
+
+   A more robust solution for truly random and independent paths for each dot
+   would involve animating each dot's `transform` directly in JavaScript,
+   or creating individual @keyframes rules dynamically (which is more complex).
+
+   For simplicity and demonstrating the concept, the current `flyAround`
+   animates a generic movement. For a true "around the div" effect where
+   each dot has its own orbit, we would use more advanced techniques.
+   However, let's adjust the `flyAround` slightly to give a sense of movement within the container.
+*/
+
+/* We'll modify the JS to set custom properties for better animation control */
