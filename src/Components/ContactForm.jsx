@@ -60,7 +60,7 @@ const ContactForm = () => {
       if (!dbRes.ok) {
         throw new Error(dbData?.message || `DB API Error: ${dbRes.status}`);
       }
-  
+      window.oaiq?.("measure", "registration_completed", { type: "customer_action" });
       // Success: redirect
       navigate("/thank-you");
     } catch (error) {

@@ -87,7 +87,7 @@ const Formchild = () => {
       );
 
       if (!res.ok) throw new Error("Failed to submit");
-
+      window.oaiq?.("measure", "registration_completed", { type: "customer_action" });
       navigate("/thank-you");
     } catch (err) {
       alert("Error: " + err.message);
