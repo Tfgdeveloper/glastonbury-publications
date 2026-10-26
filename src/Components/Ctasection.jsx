@@ -15,8 +15,8 @@ function Ctasection() {
       transition={{ duration: 0.8, ease: "easeOut" }}
     >
       
-      <img src="/images/50%cta2.png" className="hidden md:flex w-full "/>
-      <img src="/images/50%cta.jpg" className="flex md:hidden w-full "/>
+      <img src="/images/50cta2.png" className="hidden md:flex w-full "/>
+      <img src="/images/50cta.jpg" className="flex md:hidden w-full "/>
     </motion.div>
   );
 }

@@ -26,7 +26,7 @@ const Home = () => {
   return (
     <div>
       
-      <BestSellerPopup/>
+      <BestSellerPopup variant="image" imageSrc="images/Website Frankfurt Popup2.jpg" />
        
           <SEO 
             title="Glastonbury Publications | Building Successful Author Brands" 
