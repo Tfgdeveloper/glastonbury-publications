@@ -82,7 +82,7 @@
     "https://www.instagram.com/glastonburypublications/"
   ] 
 }
-</script>
+  </script>
   <!-- Opengraph Start -->
   <meta property="og:type" content="website">
   <meta property="og:title" content="Glastonbury Publications | Build Your Successful Author Brand">
@@ -112,6 +112,27 @@
       'ph': '+14250000000', // Replace with the variable that holds the user's phone number.
    } });
 </script>
+ <!-- OpenAI Pixel -->
+    <script>
+      !function(w, d, s, u) {
+        if (w.oaiq) return;
+        var q = function() { q.q.push(arguments); };
+        q.q = [];
+        w.oaiq = q;
+        var j = d.createElement(s);
+        j.async = true;
+        j.src = u;
+        var f = d.getElementsByTagName(s)[0];
+        f.parentNode.insertBefore(j, f);
+      }(window, document, "script", "https://bzrcdn.openai.com/sdk/oaiq.min.js");
+
+      oaiq("init", {
+        pixelId: "Qkfv6XN7AT3BGJxJ8nCtJf",
+        debug: true
+      });
+    </script>
+ <!-- OpenAI Pixel -->
+
 <script type="text/javascript" src="//cdn.callrail.com/companies/453268900/a4dbebb4aba4ff4c418d/12/swap.js"></script>
 
 </head>

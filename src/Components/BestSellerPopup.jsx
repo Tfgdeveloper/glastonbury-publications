@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { BookOpen, Lightbulb, Globe, Star, X } from "lucide-react";
 
 const AMAZON_URL =
-  "https://www.amazon.com/gp/bestsellers/digital-text/7006513011/ref=pd_zg_hrsr_digital-text";
+  "";
 
 const features = [
   { icon: BookOpen, label: "Bizarre Stories" },
