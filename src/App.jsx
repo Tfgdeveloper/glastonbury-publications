@@ -21,7 +21,6 @@ import Thanyou from "./Pages/Thanyou";
 import NotFound from "./Components/Notfound";
 
 import ScrollToTop from "./Components/Scrollontop";
-import { LiveChatWidget } from "@livechat/widget-react";
 import Return from "./Pages/Return";
 import Amazon from "./Pages/Landing/Amazon";
 import Kobo from "./Pages/Landing/Kobo";
@@ -43,44 +42,50 @@ import BecomeAmazonBestseller from "./Pages/Becomeamazonbestseller";
 import BecomeBarnesNobleBestseller from "./Pages/Becomebarnesnoblebestseller";
 import Catalogue2026 from "./Pages/Catalogue2026";
 
+const TAWK_SRC = "https://embed.tawk.to/6afcb2426714ba3cc376afde/1k7lhglsm";
+
 function App() {
   useEffect(() => {
-  const openChat = () => {
-    if (window.LiveChatWidget) {
-      // Open chat after 1 second
+    // Set up Tawk API + callbacks before the script loads
+    window.Tawk_API = window.Tawk_API || {};
+    window.Tawk_LoadStart = new Date();
+
+    // Open chat 1 second after the widget loads
+    window.Tawk_API.onLoad = () => {
       setTimeout(() => {
-        window.LiveChatWidget.call("maximize");
-      }, 1000);
-
-      // Auto open again when agent sends message
-      window.LiveChatWidget.on("new_event", (event) => {
-        if (
-          ["message", "rich_message", "file"].includes(event.type) &&
-          event.author.type !== "customer"
-        ) {
-          window.LiveChatWidget.call("maximize");
+        if (window.Tawk_API && typeof window.Tawk_API.maximize === "function") {
+          window.Tawk_API.maximize();
         }
-      });
+      }, 1000);
+    };
+
+    // Auto open again when an agent sends a message
+    window.Tawk_API.onChatMessageAgent = () => {
+      if (window.Tawk_API && typeof window.Tawk_API.maximize === "function") {
+        window.Tawk_API.maximize();
+      }
+    };
+
+    // Inject the script only once (avoids duplicates in React StrictMode)
+    if (!document.querySelector(`script[src="${TAWK_SRC}"]`)) {
+      const s1 = document.createElement("script");
+      s1.async = true;
+      s1.src = TAWK_SRC;
+      s1.charset = "UTF-8";
+      s1.setAttribute("crossorigin", "*");
+      const s0 = document.getElementsByTagName("script")[0];
+      if (s0 && s0.parentNode) {
+        s0.parentNode.insertBefore(s1, s0);
+      } else {
+        document.body.appendChild(s1);
+      }
     }
-  };
-
-  // If widget already loaded
-  if (window.LiveChatWidget) {
-    openChat();
-  }
-
-  // If widget loads later
-  window.__lc = window.__lc || {};
-  window.__lc.asyncInit = () => {
-    openChat();
-  };
-}, []);
+  }, []);
 
   return (
     <BrowserRouter>
       <ScrollToTop />
-      
-      <LiveChatWidget license="19067595" />
+
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
